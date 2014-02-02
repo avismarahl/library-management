@@ -1,0 +1,75 @@
+2014-02-01 22:54:08 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-01 22:54:08 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:117)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-01 22:54:08 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-01 22:54:08 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:117)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-01 22:54:08 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-01 22:54:08 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:117)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-01 23:38:24 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-01 23:38:24 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:117)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-01 23:38:24 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-01 23:38:24 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:117)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-01 23:38:24 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-01 23:38:24 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:117)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:118)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:118)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:118)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully

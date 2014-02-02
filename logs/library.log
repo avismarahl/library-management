@@ -1,0 +1,40 @@
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:40:44 INFO  AUTHOR_ISBN_DAL_LOGGGER:55 - See the error below
+
+java.lang.NullPointerException
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:48)
+	at com.raremile.library.process.ProcessData.makeMasterBookObjectAndInsert(ProcessData.java:118)
+	at com.raremile.library.input.LibraryDriver.main(LibraryDriver.java:62)
+2014-02-02 00:40:44 INFO  BooksDAL:44 - Inserted Successfully
+2014-02-02 00:42:48 INFO  MasterBookDAL:174 - The isbn-query returned false. Null reference is being returned
+2014-02-02 00:43:00 INFO  CategoryDAL:38 - Preparing to insert Category value into the table
+2014-02-02 00:43:00 INFO  CategoryDAL:43 - The Category-isbn has been inserted successfully
+2014-02-02 00:43:00 INFO  CategoryDAL:38 - Preparing to insert Category value into the table
+2014-02-02 00:43:00 INFO  CategoryDAL:43 - The Category-isbn has been inserted successfully
+2014-02-02 00:43:01 INFO  MasterBookDAL:50 - Inserted correctly
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 00:43:01 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 00:43:01 INFO  BooksDAL:44 - Inserted Successfully
+2014-02-02 01:00:49 INFO  MasterBookDAL:174 - The isbn-query returned false. Null reference is being returned
+2014-02-02 01:01:38 INFO  AuthorDAL:42 - Preparing to insert Author value into the table
+2014-02-02 01:01:38 INFO  AuthorDAL:47 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  AuthorDAL:42 - Preparing to insert Author value into the table
+2014-02-02 01:01:38 INFO  AuthorDAL:47 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  AuthorDAL:42 - Preparing to insert Author value into the table
+2014-02-02 01:01:38 INFO  AuthorDAL:47 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  CategoryDAL:38 - Preparing to insert Category value into the table
+2014-02-02 01:01:38 INFO  CategoryDAL:43 - The Category-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  CategoryDAL:38 - Preparing to insert Category value into the table
+2014-02-02 01:01:38 INFO  CategoryDAL:43 - The Category-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  MasterBookDAL:50 - Inserted correctly
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
+2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 01:01:38 INFO  BooksDAL:44 - Inserted Successfully

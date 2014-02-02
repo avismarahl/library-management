@@ -1,0 +1,22 @@
+2014-01-19 01:59:23 INFO  AUTHOR_ISBN_DAL_LOGGGER:50 - Preparing to insert Author-ISBN values into the table
+2014-01-19 01:59:23 INFO  AUTHOR_ISBN_DAL_LOGGGER:59 - See the error below
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`Library`.`Author_ISBN`, CONSTRAINT `Author_ISBN_ibfk_1` FOREIGN KEY (`AUTHOR_ID`) REFERENCES `Authors` (`AUTHOR_ID`))
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:534)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1041)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2825)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2441)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2366)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2350)
+	at com.raremile.library.dal.AuthorISBNDAL.insertAuthorISBN(AuthorISBNDAL.java:54)
+	at com.raremile.library.dal.AuthorISBNDAL.main(AuthorISBNDAL.java:97)
