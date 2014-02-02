@@ -23,7 +23,7 @@ public class AuthorISBNDAL {
 	 * @param MasterBook
 	 * 
 	 *            Takes the Author and MasterBook objects and uses them to
-	 *            insert into the table
+	 *            insert into the table.
 	 * 
 	 * 
 	 */

@@ -15,14 +15,14 @@ public class CategoryDAL {
 	private static Logger logger = Logger.getLogger("CategoryDAL");
 
 	private static PreparedStatement pstmt = null;
-	private static final String INSERT_STATEMENT = "INSERT INTO CATEGORIES (CATEGORY_NAME) VALUES(?);";// ADDED
-																										// CATEGORY
-																										// NAME
+	private static final String INSERT_STATEMENT = "INSERT INTO CATEGORIES (CATEGORY_NAME) VALUES(?);";
+
 	private static final String FIND_CATEGORY = "SELECT CATEGORY_ID FROM CATEGORIES WHERE CATEGORY_NAME = ?;";
+
+	private static boolean hasToCreate = false;
 
 	public static void insertCategory(Category Category, Connection con) {
 		BasicConfigurator.configure();
-		boolean hasToCreate = false;
 
 		if (con == null) {
 			hasToCreate = true;
@@ -54,7 +54,6 @@ public class CategoryDAL {
 	public static Category findCategoryID(Category category, Connection con) {
 		BasicConfigurator.configure();
 		ResultSet rs = null;
-		boolean hasToCreate = false;
 
 		if (con == null) {
 			hasToCreate = true;

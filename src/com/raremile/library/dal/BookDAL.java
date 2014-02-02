@@ -21,7 +21,13 @@ public class BookDAL {
 	private static final String BOOKS_RETRIEVE_INFO = "SELECT STATUS,ISSUE_DATE,DEPOSIT_DATE FROM BOOKS WHERE BOOK_ID=?;";
 	private static final String BOOKS_GET_DATES = "SELECT ISSUE_DATE,DUE_DATE FROM BOOKS WHERE BOOK_ID = ?;";
 
-	// Function for inserting books in books table
+	/***
+	 * 
+	 * @param book
+	 * @param con
+	 * 
+	 * This method takes in the book object and inserts the information inside the BOOKS table.
+	 */
 	public static void insertBook(Book book, Connection con) {
 		boolean hasToCreate = false;
 		if (con == null) {
@@ -79,7 +85,7 @@ public class BookDAL {
 		}
 
 		try {
-			MasterBook masterbook = MasterBookDAL.isExists(book.getMasterbook(), con);
+			MasterBook masterbook = MasterBookDAL.findMasterBook(book.getMasterbook(), con);
 			book.setMasterbook(masterbook);
 			if (masterbook != null) {
 				pstmt = con.prepareStatement(BOOKS_CHECK_STATUS);
@@ -116,6 +122,14 @@ public class BookDAL {
 		return (null);
 
 	}
+	/***
+	 * 
+	 * @param book
+	 * @param con
+	 * @return
+	 * 
+	 * This method takes in the book object and issues it. Makes the corresponding changes in the BOOKS table.
+	 */
 
 	public Book issueBook(Book book, Connection con) {
 		boolean hasToCreate = false;

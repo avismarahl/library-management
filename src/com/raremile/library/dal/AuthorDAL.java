@@ -15,19 +15,20 @@ public class AuthorDAL {
 	private static Logger logger = Logger.getLogger("AuthorDAL");
 
 	private static PreparedStatement pstmt = null;
-	private static final String INSERT_STATEMENT = "INSERT INTO AUTHORS(AUTHOR_NAME) VALUES(?);";// AUTHOR_NAME
-																									// ADDED
-	private static final String FIND_AUTHOR = "SELECT AUTHOR_ID FROM AUTHORS WHERE AUTHOR_NAME = ?;";// AUTHOR_ID
-																										// TO
-																										// *
+	private static final String INSERT_STATEMENT = "INSERT INTO AUTHORS(AUTHOR_NAME) VALUES(?);";
 
-	/* *
-	 * This method will insert the author values into the author database
+	private static final String FIND_AUTHOR = "SELECT AUTHOR_ID FROM AUTHORS WHERE AUTHOR_NAME = ?;";
+	private static boolean hasToCreate = false;
+
+	/***
+	 * 
+	 * @param author
+	 * @param con
+	 * 
+	 *            Inserts the author object into the AUTHOR table.
 	 */
 	public static void insertAuthor(Author author, Connection con) {
 		BasicConfigurator.configure();
-		boolean hasToCreate = false;
-
 		if (con == null) {
 			hasToCreate = true;
 			try {
@@ -55,15 +56,16 @@ public class AuthorDAL {
 
 	}
 
-	/*
-	 * This method checks the author database if the author-title exists in the
-	 * database. It returns true if the title exists. It returns false if the
-	 * author doesn't exist
-	 */
-
-	/*
-	 * This method finds the author_name according to the author_id. It returns
-	 * the author object when it encounters the corresponding the author name. s
+	/***
+	 * 
+	 * @param author
+	 * @param con
+	 * @return Author object
+	 * 
+	 *         This method finds the AUTHOR_ID as given by the title stored in
+	 *         the authorID field in the author object. Then, the method returns
+	 *         the author object to the caller.
+	 * 
 	 */
 
 	public static Author findAuthorID(Author author, Connection con) {

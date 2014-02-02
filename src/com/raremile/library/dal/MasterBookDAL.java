@@ -23,12 +23,12 @@ public class MasterBookDAL {
 	private static final String MASTER_BOOK_AUTHOR = "SELECT AUTHOR_NAME,AUTHOR_ID FROM AUTHORS WHERE AUTHOR_ID IN (SELECT AUTHOR_ID FROM AUTHOR_ISBN WHERE ISBN=?);";
 	private static final String MASTER_BOOK_CATEGORY = "SELECT CATEGORY_NAME,CATEGORY_ID FROM CATEGORIES WHERE CATEGORY_ID IN (SELECT CATEGORY_ID FROM CATEGORY_ISBN WHERE ISBN=?);";
 	private static final String MASTER_BOOK_UPDATE = " UPDATE MASTER_BOOKS SET TITLE= ?,PUBLISHER=? WHERE ISBN=?;";
+	private static boolean hasToCreate = false;
 
 	/*
 	 * For inserting entries in database
 	 */
 	public static void insertMasterBook(MasterBook masterbook, Connection con) {
-		boolean hasToCreate = false;
 
 		if (con == null) {
 			try {
@@ -61,7 +61,6 @@ public class MasterBookDAL {
 	}
 
 	public static void updateMasterBook(MasterBook masterbook, Connection con) {
-		boolean hasToCreate = false;
 
 		if (con == null) {
 			try {
@@ -113,8 +112,7 @@ public class MasterBookDAL {
 	 *         book with that particular isbn doesn't exist.
 	 */
 
-	public static MasterBook isExists(MasterBook masterbook,
-			Connection con) {
+	public static MasterBook findMasterBook(MasterBook masterbook, Connection con) {
 
 		List<Author> authors = new ArrayList<Author>();
 		List<Category> categories = new ArrayList<Category>();
@@ -122,6 +120,7 @@ public class MasterBookDAL {
 		if (con == null) {
 			try {
 				con = DBConnection.getConnection();
+				hasToCreate = true;
 			} catch (Exception e) {
 
 				e.printStackTrace();
@@ -170,6 +169,9 @@ public class MasterBookDAL {
 
 		catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			if (hasToCreate)
+				DBConnection.closeObjects(null, con, pstmt);
 		}
 		logger.info("The isbn-query returned false. Null reference is being returned");
 		return null;
