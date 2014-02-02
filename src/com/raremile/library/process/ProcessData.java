@@ -38,7 +38,7 @@ public class ProcessData {
 		MasterBook masterbook = new MasterBook();
 
 		masterbook.setIsbn(isbn);
-		masterbook = MasterBookDAL.isExists(masterbook, con);
+		masterbook = MasterBookDAL.findMasterBook(masterbook, con);
 		if (masterbook == null)
 			return false;
 		else {
@@ -109,7 +109,7 @@ public class ProcessData {
 		MasterBookDAL.insertMasterBook(masterbook, con);
 		Iterator<Author> AuthorObjectIterator = masterbook.getAuthors()
 				.iterator();
-		// Clear the bugs starting from here.
+
 		while (AuthorObjectIterator.hasNext()) {
 			Author tempAuth = AuthorObjectIterator.next();
 			tempAuth = AuthorDAL.findAuthorID(tempAuth, con);
@@ -124,7 +124,6 @@ public class ProcessData {
 			tempCategory = CategoryDAL.findCategoryID(tempCategory, con);
 			CategoryISBNDAL.insertCategoryISBN(tempCategory, masterbook, con);
 		}
-		// till here
 
 		book.setMasterbook(masterbook);
 		book.setStatus(true);

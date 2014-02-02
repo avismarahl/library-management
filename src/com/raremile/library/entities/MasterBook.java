@@ -9,6 +9,9 @@ public class MasterBook {
 	private String publisher;
 	private List <Author> authors = new ArrayList<Author>();
 	private List <Category> categories = new ArrayList<Category>();
+	/*
+	 * Getters and setters for the MasterBook class
+	 */
 	
 	
 	

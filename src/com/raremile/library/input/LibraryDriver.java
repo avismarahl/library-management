@@ -9,6 +9,12 @@ import com.raremile.library.connection.DBConnection;
 import com.raremile.library.process.ProcessData;
 
 public class LibraryDriver {
+	/**
+	 * 
+	 * @param args
+	 * 
+	 * Temporary front end for the software
+	 */
 
 	public static void main(String args[]) {
 		int isbn;

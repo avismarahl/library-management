@@ -20,6 +20,12 @@ public class CategoryDAL {
 	private static final String FIND_CATEGORY = "SELECT CATEGORY_ID FROM CATEGORIES WHERE CATEGORY_NAME = ?;";
 
 	private static boolean hasToCreate = false;
+	/***
+	 * 
+	 * @param Category
+	 * @param con
+	 *     			This method inserts the category object into the CATEGORY table
+	 */
 
 	public static void insertCategory(Category Category, Connection con) {
 		BasicConfigurator.configure();
@@ -50,6 +56,15 @@ public class CategoryDAL {
 		}
 
 	}
+	/***
+	 * 
+	 * @param category
+	 * @param con
+	 * @return
+	 * 
+	 * This method queries the CATEGORY table and finds the categoryID of the category object as given 
+	 * by the category.categoryName
+	 */
 
 	public static Category findCategoryID(Category category, Connection con) {
 		BasicConfigurator.configure();

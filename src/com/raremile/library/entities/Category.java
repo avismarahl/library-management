@@ -3,6 +3,9 @@ package com.raremile.library.entities;
 public class Category {
 	int categoryID;
 	String categoryName;
+	/*
+	 * Getters and setters for the Category class
+	 */
 
 	public int getCategoryID() {
 		return categoryID;

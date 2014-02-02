@@ -3,6 +3,9 @@ package com.raremile.library.entities;
 public class Author {
 	private int authorID;
 	private String authorName;
+	/*
+	 * Getters and setters for the Author class
+	 */
 	public int getAuthorID() {
 		return authorID;
 	}

@@ -29,11 +29,6 @@ public class CategoryISBNDAL {
 	public static void insertCategoryISBN(Category category,
 			MasterBook masterbook, Connection con) {
 		boolean flag = true;
-
-		/*
-		 * Does the NULL check and creates a new connection if the connection
-		 * doesn't exist
-		 */
 		if (con == null) {
 			try {
 				flag = false;

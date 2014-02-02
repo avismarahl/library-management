@@ -8,6 +8,9 @@ public class Book {
 	private boolean status;
 	private Timestamp issuedate;
 	private Timestamp duedate;
+	/*
+	 * Getters and setters for the Book class
+	 */
 	public int getBookID() {
 		return bookID;
 	}
