@@ -13,7 +13,7 @@ public class LibraryDriver {
 	 * 
 	 * @param args
 	 * 
-	 * Temporary front end for the software
+	 *            Temporary front end for the software
 	 */
 
 	public static void main(String args[]) {
@@ -34,11 +34,7 @@ public class LibraryDriver {
 		Scanner sc = new Scanner(System.in);
 		isbn = sc.nextInt();
 		flowcheck = ProcessData.processISBN(isbn, con);
-		if (flowcheck) {
-			System.out
-					.println("Book exists in the database. Successfully inserted");
-
-		} else {
+		if (!flowcheck) {
 
 			System.out.println("Enter the list of authors. Enter -1 to finish");
 

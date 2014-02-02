@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import com.raremile.library.dal.AuthorDAL;
 import com.raremile.library.dal.CategoryDAL;
 import com.raremile.library.dal.AuthorISBNDAL;
@@ -20,6 +22,7 @@ public class ProcessData {
 	private static Book book = new Book();
 	private static List<Author> authors = new ArrayList<Author>();
 	private static List<Category> categories = new ArrayList<Category>();
+	private static Logger logger = Logger.getLogger(ProcessData.class);
 
 	/***
 	 * 
@@ -39,9 +42,12 @@ public class ProcessData {
 
 		masterbook.setIsbn(isbn);
 		masterbook = MasterBookDAL.findMasterBook(masterbook, con);
-		if (masterbook == null)
+		if (masterbook == null) {
+			logger.info("Process has received a null reference to the masterbook object. Returning false...");
 			return false;
+		}
 		else {
+			logger.info("The book corresponding to the given isbn has been found.");
 			book.setMasterbook(masterbook);
 			book.setStatus(true);
 			BookDAL.insertBook(book, con);
@@ -127,6 +133,7 @@ public class ProcessData {
 
 		book.setMasterbook(masterbook);
 		book.setStatus(true);
+		logger.info("The book object has been made and it is getting ready to be put into the database");
 		BookDAL.insertBook(book, con);
 
 	}
