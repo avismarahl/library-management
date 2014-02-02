@@ -15,6 +15,7 @@ public class CategoryISBNDAL {
 	private final static String INSERT_STATEMENT = "INSERT INTO CATEGORY_ISBN (Category_ID,ISBN) VALUES (?,?);";
 	private final static Logger logger = Logger
 			.getLogger("CATEGORY_ISBN_DAL_LOGGER");
+	private static boolean hasToCreate = false;
 
 	/**
 	 * 
@@ -28,10 +29,10 @@ public class CategoryISBNDAL {
 
 	public static void insertCategoryISBN(Category category,
 			MasterBook masterbook, Connection con) {
-		boolean flag = true;
+
 		if (con == null) {
 			try {
-				flag = false;
+				hasToCreate = true;
 				con = DBConnection.getConnection();
 			} catch (Exception e1) {
 
@@ -50,7 +51,7 @@ public class CategoryISBNDAL {
 		} catch (Exception e) {
 			logger.info("Exception explanation: ", e);
 		} finally {
-			if (!flag)
+			if (hasToCreate)
 				DBConnection.closeObjects(null, con, pstmt);
 		}
 	}

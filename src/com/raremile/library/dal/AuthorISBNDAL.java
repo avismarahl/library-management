@@ -16,6 +16,7 @@ public class AuthorISBNDAL {
 	
 	final static String INSERT_STATEMENT = "INSERT INTO AUTHOR_ISBN (AUTHOR_ID,ISBN) VALUES (?,?);";
 	private static final Logger logger = Logger.getLogger("AUTHOR_ISBN_DAL_LOGGGER");
+	private static boolean hasToCreate = false;
 
 	/**
 	 * 
@@ -30,7 +31,7 @@ public class AuthorISBNDAL {
 	public static void insertAuthorISBN(Author author, MasterBook masterbook,
 			Connection con) {
 		BasicConfigurator.configure();
-		boolean hasToCreate = false;
+		
 
 		if (con == null) {
 			hasToCreate = true;
