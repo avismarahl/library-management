@@ -1488,3 +1488,5 @@ java.lang.NullPointerException
 2014-02-02 00:43:01 INFO  CATEGORY_ISBN_DAL_LOGGER:48 - Preparing to insert the values into the logger
 2014-02-02 01:01:38 INFO  CATEGORY_ISBN_DAL_LOGGER:48 - Preparing to insert the values into the logger
 2014-02-02 01:01:38 INFO  CATEGORY_ISBN_DAL_LOGGER:48 - Preparing to insert the values into the logger
+2014-02-02 19:32:58 INFO  CATEGORY_ISBN_DAL_LOGGER:44 - Preparing to insert the values into the logger
+2014-02-02 19:44:59 INFO  CATEGORY_ISBN_DAL_LOGGER:44 - Preparing to insert the values into the logger

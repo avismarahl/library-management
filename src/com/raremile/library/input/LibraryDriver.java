@@ -5,10 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import com.raremile.library.connection.DBConnection;
 import com.raremile.library.process.ProcessData;
 
 public class LibraryDriver {
+	private static Logger logger = Logger.getLogger(LibraryDriver.class);
 	/**
 	 * 
 	 * @param args
@@ -31,8 +34,9 @@ public class LibraryDriver {
 			e.printStackTrace();
 		}
 		System.out.println("Please enter the ISBN");
-		Scanner sc = new Scanner(System.in);
-		isbn = sc.nextInt();
+		Scanner scInt = new Scanner(System.in);
+		isbn = scInt.nextInt();
+		Scanner scString = new Scanner(System.in);
 		flowcheck = ProcessData.processISBN(isbn, con);
 		if (!flowcheck) {
 
@@ -40,27 +44,28 @@ public class LibraryDriver {
 
 			while (true) {
 				String author_name;
-				author_name = sc.nextLine();
+				author_name = scString.nextLine();
 				if (author_name.equalsIgnoreCase("-1"))
 					break;
 				authors.add(author_name);
+				logger.info(""+ author_name);
 			}
 			System.out
 					.println("Enter the list of categories. Enter -1 to finish");
 
 			while (true) {
 				String category_name;
-				category_name = sc.nextLine();
+				category_name = scString.nextLine();
 				if (category_name.equalsIgnoreCase("-1"))
 					break;
 				categories.add(category_name);
 			}
 			System.out.println("Enter the publisher");
 			String publisher;
-			publisher = sc.nextLine();
+			publisher = scString.nextLine();
 			System.out.println("Enter the title");
 			String title;
-			title = sc.nextLine();
+			title = scString.nextLine();
 			ProcessData.makeMasterBookObjectAndInsert(isbn, title, publisher,
 					authors, categories, con);
 			DBConnection.closeObjects(null, con, null);

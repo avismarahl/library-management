@@ -73,3 +73,9 @@ java.lang.NullPointerException
 2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
 2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
 2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:47 - Preparing to insert Author-ISBN values into the table
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:53 - The author-isbn has been inserted successfully
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:47 - Preparing to insert Author-ISBN values into the table
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:53 - The author-isbn has been inserted successfully
+2014-02-02 19:44:59 INFO  AUTHOR_ISBN_DAL_LOGGGER:47 - Preparing to insert Author-ISBN values into the table
+2014-02-02 19:44:59 INFO  AUTHOR_ISBN_DAL_LOGGGER:53 - The author-isbn has been inserted successfully

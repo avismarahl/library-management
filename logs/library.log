@@ -38,3 +38,24 @@ java.lang.NullPointerException
 2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:46 - Preparing to insert Author-ISBN values into the table
 2014-02-02 01:01:38 INFO  AUTHOR_ISBN_DAL_LOGGGER:52 - The author-isbn has been inserted successfully
 2014-02-02 01:01:38 INFO  BooksDAL:44 - Inserted Successfully
+2014-02-02 19:31:42 INFO  MasterBookDAL:176 - The isbn-query returned false. Null reference is being returned
+2014-02-02 19:31:42 INFO  ProcessData:46 - Process has received a null reference to the masterbook object. Returning false...
+2014-02-02 19:31:42 INFO  LibraryDriver:50 - 
+2014-02-02 19:32:20 INFO  LibraryDriver:50 - Kathy
+2014-02-02 19:32:57 INFO  AuthorDAL:43 - Preparing to insert Author value into the table
+2014-02-02 19:32:58 INFO  AuthorDAL:48 - The author-isbn has been inserted successfully
+2014-02-02 19:32:58 INFO  MasterBookDAL:50 - Inserted correctly
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:47 - Preparing to insert Author-ISBN values into the table
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:53 - The author-isbn has been inserted successfully
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:47 - Preparing to insert Author-ISBN values into the table
+2014-02-02 19:32:58 INFO  AUTHOR_ISBN_DAL_LOGGGER:53 - The author-isbn has been inserted successfully
+2014-02-02 19:32:58 INFO  ProcessData:136 - The book object has been made and it is getting ready to be put into the database
+2014-02-02 19:32:58 INFO  BooksDAL:52 - Inserted Successfully
+2014-02-02 19:44:14 INFO  MasterBookDAL:176 - The isbn-query returned false. Null reference is being returned
+2014-02-02 19:44:14 INFO  ProcessData:46 - Process has received a null reference to the masterbook object. Returning false...
+2014-02-02 19:44:23 INFO  LibraryDriver:51 - Cathy
+2014-02-02 19:44:59 INFO  MasterBookDAL:50 - Inserted correctly
+2014-02-02 19:44:59 INFO  AUTHOR_ISBN_DAL_LOGGGER:47 - Preparing to insert Author-ISBN values into the table
+2014-02-02 19:44:59 INFO  AUTHOR_ISBN_DAL_LOGGGER:53 - The author-isbn has been inserted successfully
+2014-02-02 19:44:59 INFO  ProcessData:136 - The book object has been made and it is getting ready to be put into the database
+2014-02-02 19:44:59 INFO  BooksDAL:52 - Inserted Successfully
